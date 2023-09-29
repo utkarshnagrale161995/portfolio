@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import {Routes,Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Profile from './component/Profile';
 import Home from './component/Home';
 import Header from './component/Header';
@@ -19,6 +19,7 @@ function App() {
   return (
     <div>
       <Header />
+      <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={ 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/newcontact" element={<Newcontact/>}></Route>
       </Routes>
+      </BrowserRouter>
     </div>
   );
 }
