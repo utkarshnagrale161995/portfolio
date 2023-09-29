@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Profile from './component/Profile';
 import Home from './component/Home';
 import Header from './component/Header';
@@ -18,8 +18,9 @@ const LazyAbout = React.lazy(()=>import ("./component/About"));
 function App() {
   return (
     <div>
-      <Header />
+      
       <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={ 
