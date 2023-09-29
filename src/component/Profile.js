@@ -12,6 +12,7 @@ function Profile(){
         }
     }
 
+
     const handleLogout=()=>{
         localStorage.removeItem("loggedin");
         navigate('/')
@@ -32,7 +33,10 @@ function Profile(){
                       <NavLink style={navLinkStyle} to="certification">Certification</NavLink>
                     </li>
                     <li className="nav-item p-2">
-                      <NavLink style={navLinkStyle} to="project">Project</NavLink>
+                      <NavLink style={navLinkStyle} to="project">Projects</NavLink>
+                    </li>
+                    <li className="nav-item p-2">
+                      <NavLink style={navLinkStyle} to="https://drive.google.com/file/d/1XL8dA85j-ufwPcssYipJhTmNmxZ3aFDo/view?usp=drive_link">Download Resume</NavLink>
                     </li>
                     <li className="nav-item p-2">
                        <button className="btn btn-danger" onClick={handleLogout}>LogOut</button>

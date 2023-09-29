@@ -179,7 +179,7 @@ function Project(){
                <div className="col-md-4">
                 <div className="card">
                 <div className="card-header bg-warning">
-                    FoodJunction
+                    Food Junction
                 </div>
                 <div className="card-body">
                    
@@ -229,7 +229,7 @@ function Project(){
             &nbsp;&nbsp;
             <div className="row gx-3">
             <div className="col-md-4">
-                <div className="card">
+                <div className="card h-100">
                  <div className="card-header bg-warning">
                     Registration Form
                  </div>
@@ -252,12 +252,12 @@ function Project(){
                </div>
 
                <div className="col-md-4">
-                <div className="card">
+                <div className="card h-100">
                  <div className="card-header bg-warning">
                     Ecommerce Web App
                  </div>
                  <div className="card-body">
-                    <div><b>Description</b></div>
+                    <div><b>Description:</b> Is use to display products, details, category, fetch price, place order and check delivery status. </div>
                     <div><b>Tech used:</b> C# | MS-SQL | EFCore | ASP.NET | Postman</div>
                  </div>
                  <div className="card-footer">
@@ -265,8 +265,7 @@ function Project(){
                     <button className="btn btn-primary">Code</button>
                     </Link>
                    
-                    &nbsp; &nbsp;
-                    <button className="btn btn-primary">Live Demo</button>
+        
                  </div>
                </div>
                </div>

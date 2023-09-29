@@ -65,6 +65,7 @@ const Newcontact = () => {
         <div className="form-group">
              <input type="submit" value="Send"/>
         </div>
+      
         
       </form>
     </div>

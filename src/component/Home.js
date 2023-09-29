@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import myimage from '../assets/myimage.jpg';
+//import myimage from '../assets/myimage.jpg';
+import pic5 from '../assets/pic5.jpg';
 import nhtlogo from '../assets/nhtlogo.jpg';
 import ncsslogo from '../assets/ncsslogo.jpg';
 import njslogo from '../assets/njslogo.jpg';
@@ -45,7 +46,7 @@ function Home(){
             <div className="card-body text-center">
               <div><b>Hi! I am Utkarsh Nagrale. A passionate FullStack Developer</b></div>
               <br/>
-               <div><img src={myimage} alt="myimage" style={image}/></div>
+               <div style={{objectFit:'cover'}}><img src={pic5} alt="myimage" style={image}/></div>
             </div>
             
             <div className="card-footer">

@@ -30,6 +30,7 @@ import ReactCertificateInfosys from '../certificates/Reactprofessional.jpg';
 import Aspdotnet from '../certificates/ASP.NETCertificate.jpg';
 import Agile from '../certificates/AgileCertificate.jpg';
 import CSharpInfosys from '../certificates/CSharpInfosys.jpg';
+import FEWDCertificate from '../certificates/FEWDCertificate.jpg';
 
 
 
@@ -126,11 +127,13 @@ function Certification(){
                              Infosys Certified Front End Developer
                        </div>
                        <div className="card-body">
-                             <img src="" alt="Certification"/>
+                             <img src={FEWDCertificate} alt="Certification" style={image3}/>
                              <hr></hr>
                        </div>
                        <div className="card-footer">
-                       <Link to=""><button className="btn btn-primary">Download Certificate</button></Link>
+                       <Link to="https://drive.google.com/file/d/1Ix7LB85FmsVTxrU1YuEPr2XMUCy9H0av/view?usp=drive_link">
+                        <button className="btn btn-primary">Download Certificate</button>
+                       </Link>
                        </div>
                        </div>
                   </div>
