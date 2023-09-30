@@ -1,9 +1,9 @@
 import React from 'react';
-import { NavLink,Outlet,useNavigate } from 'react-router-dom';
+import { NavLink,Outlet } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Profile(){
-    const navigate=useNavigate();
+
     const navLinkStyle=({isActive})=>{
         return{
             fontWeight: isActive ? 'bold' : 'normal',
@@ -13,10 +13,6 @@ function Profile(){
     }
 
 
-    const handleLogout=()=>{
-        localStorage.removeItem("loggedin");
-        navigate('/')
-    }
 
     return(
         <div>
@@ -37,9 +33,6 @@ function Profile(){
                     </li>
                     <li className="nav-item p-2">
                       <NavLink style={navLinkStyle} to="https://drive.google.com/file/d/1XL8dA85j-ufwPcssYipJhTmNmxZ3aFDo/view?usp=drive_link">Download Resume</NavLink>
-                    </li>
-                    <li className="nav-item p-2">
-                       <button className="btn btn-danger" onClick={handleLogout}>LogOut</button>
                     </li>
                     </ul>
                 </div>

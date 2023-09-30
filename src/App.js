@@ -8,35 +8,26 @@ import Professional from './component/Professional';
 import Academic from './component/Academic';
 import Certification from './component/Certification';
 import Project from './component/Project'
-import Protect from './component/Protect';
-import Login from './component/Login';
-import Contact from './component/Contact';
 import Newcontact from './component/Newcontact';
+import About from './component/About';
 import "bootstrap/dist/css/bootstrap.css";
-const LazyAbout = React.lazy(()=>import ("./component/About"));
 
 function App() {
   return (
     <div>
-      
-      <BrowserRouter>
       <Header />
+      <BrowserRouter>
+
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={ 
-          <React.Suspense fallback="Loading...">
-            <LazyAbout/>
-          </React.Suspense>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/profile" element={<Protect Component={Profile}/>}>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/profile" element={<Profile/>}>
            <Route index element={<Academic/>}/>
            <Route path="academic" element={<Academic/>}/>
            <Route path="professional" element={<Professional/>}/>
            <Route path="project" element={<Project/>} />
            <Route path="certification" element={<Certification/>}/>  
         </Route>
-       
-        <Route path="/contact" element={<Contact/>}/>
         <Route path="/newcontact" element={<Newcontact/>}></Route>
       </Routes>
       </BrowserRouter>
